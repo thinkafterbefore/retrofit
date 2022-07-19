@@ -7,8 +7,8 @@ env:
 
 jobs:
   android:
-    runs-on: Android Test ${{matrix.runs-on}}
-
+    runs-on: ${{matrix.runs-on}}
+    name: Android Test ${{matrix.runs-on}}
     strategy:
       fail-fast: false
       matrix:
